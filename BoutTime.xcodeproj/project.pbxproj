@@ -12,6 +12,7 @@
 		FDBF476D1FE08B6200E78992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF476B1FE08B6200E78992 /* Main.storyboard */; };
 		FDBF476F1FE08B6200E78992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBF476E1FE08B6200E78992 /* Assets.xcassets */; };
 		FDBF47721FE08B6200E78992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF47701FE08B6200E78992 /* LaunchScreen.storyboard */; };
+		FDC1E81A1FE2EDF0000389B7 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC1E8191FE2EDF0000389B7 /* UILabelExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FDBF476E1FE08B6200E78992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDBF47711FE08B6200E78992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDBF47731FE08B6200E78992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC1E8191FE2EDF0000389B7 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		FDBF47661FE08B6200E78992 /* BoutTime */ = {
 			isa = PBXGroup;
 			children = (
+				FDC1E8181FE2EDD1000389B7 /* extensions */,
 				FDBF47671FE08B6200E78992 /* AppDelegate.swift */,
 				FDBF47691FE08B6200E78992 /* ViewController.swift */,
 				FDBF476B1FE08B6200E78992 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				FDBF47731FE08B6200E78992 /* Info.plist */,
 			);
 			path = BoutTime;
+			sourceTree = "<group>";
+		};
+		FDC1E8181FE2EDD1000389B7 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDC1E8191FE2EDF0000389B7 /* UILabelExtension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBF476A1FE08B6200E78992 /* ViewController.swift in Sources */,
+				FDC1E81A1FE2EDF0000389B7 /* UILabelExtension.swift in Sources */,
 				FDBF47681FE08B6200E78992 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.prevole.BoutTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.prevole.BoutTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

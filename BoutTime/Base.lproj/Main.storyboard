@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +15,193 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t7w-KE-7yI">
+                                <rect key="frame" x="20" y="20" width="335" height="640"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3o7-6a-o9i">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3N-8f-Jqh">
+                                                <rect key="frame" x="293.5" y="0.0" width="41.5" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="L3N-8f-Jqh" secondAttribute="height" multiplier="158:457" id="BOF-kW-hSA"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="down_full"/>
+                                                <state key="highlighted" image="down_full_selected"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVT-ux-bsH">
+                                                <rect key="frame" x="0.0" y="0.0" width="293.5" height="120"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NVT-ux-bsH" firstAttribute="leading" secondItem="3o7-6a-o9i" secondAttribute="leading" id="Fzm-Sk-bmP"/>
+                                            <constraint firstAttribute="trailing" secondItem="L3N-8f-Jqh" secondAttribute="trailing" id="OIn-HB-zfl"/>
+                                            <constraint firstAttribute="bottom" secondItem="L3N-8f-Jqh" secondAttribute="bottom" id="XWP-C5-A6q"/>
+                                            <constraint firstItem="L3N-8f-Jqh" firstAttribute="leading" secondItem="NVT-ux-bsH" secondAttribute="trailing" id="cgV-Z8-Jyy"/>
+                                            <constraint firstItem="L3N-8f-Jqh" firstAttribute="top" secondItem="3o7-6a-o9i" secondAttribute="top" id="g1n-GZ-4XR"/>
+                                            <constraint firstAttribute="bottom" secondItem="NVT-ux-bsH" secondAttribute="bottom" id="vJ9-ig-6dP"/>
+                                            <constraint firstItem="NVT-ux-bsH" firstAttribute="top" secondItem="3o7-6a-o9i" secondAttribute="top" id="xZg-52-hmf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-Gj-zGB">
+                                        <rect key="frame" x="0.0" y="130" width="335" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f14-dT-ONz">
+                                                <rect key="frame" x="294" y="0.0" width="41" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="f14-dT-ONz" secondAttribute="height" multiplier="158:229" id="Q5R-SH-E9z"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="up_half"/>
+                                                <state key="selected" image="up_half_selected"/>
+                                                <state key="highlighted" image="up_half_selected"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uV-he-IDU">
+                                                <rect key="frame" x="294" y="60" width="41" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1uV-he-IDU" secondAttribute="height" multiplier="158:229" id="9Xn-YT-11V"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="down_half"/>
+                                                <state key="selected" image="down_half_selected"/>
+                                                <state key="highlighted" image="down_half_selected"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-xd-Y8K">
+                                                <rect key="frame" x="0.0" y="0.0" width="294.5" height="120"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="f14-dT-ONz" secondAttribute="bottom" id="35Y-Tj-eTm"/>
+                                            <constraint firstAttribute="trailing" secondItem="f14-dT-ONz" secondAttribute="trailing" id="50S-6k-5I6"/>
+                                            <constraint firstItem="1uV-he-IDU" firstAttribute="top" secondItem="Otu-Gj-zGB" secondAttribute="centerY" id="LVe-nn-CQt"/>
+                                            <constraint firstAttribute="bottom" secondItem="1uV-he-IDU" secondAttribute="bottom" id="MG7-lb-GgF"/>
+                                            <constraint firstAttribute="trailing" secondItem="1uV-he-IDU" secondAttribute="trailing" id="TXF-NF-lb4"/>
+                                            <constraint firstItem="1uV-he-IDU" firstAttribute="leading" secondItem="SXb-xd-Y8K" secondAttribute="trailing" id="UCe-A5-3Xo"/>
+                                            <constraint firstItem="SXb-xd-Y8K" firstAttribute="leading" secondItem="Otu-Gj-zGB" secondAttribute="leading" id="hGg-Nb-bDH"/>
+                                            <constraint firstItem="f14-dT-ONz" firstAttribute="top" secondItem="Otu-Gj-zGB" secondAttribute="top" id="haK-Hx-sKR"/>
+                                            <constraint firstAttribute="height" constant="120" id="mEW-yB-ksu"/>
+                                            <constraint firstAttribute="bottom" secondItem="SXb-xd-Y8K" secondAttribute="bottom" id="qn2-8T-6GR"/>
+                                            <constraint firstItem="SXb-xd-Y8K" firstAttribute="top" secondItem="Otu-Gj-zGB" secondAttribute="top" id="zAf-k9-vDb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNq-CN-rt8">
+                                        <rect key="frame" x="0.0" y="260" width="335" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-9t-vTi">
+                                                <rect key="frame" x="293.5" y="0.5" width="41.5" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YfG-9t-vTi" secondAttribute="height" multiplier="158:229" id="aUX-an-yT9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="up_half"/>
+                                                <state key="selected" image="up_half_selected"/>
+                                                <state key="highlighted" image="up_half_selected"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vV-f2-PdZ">
+                                                <rect key="frame" x="294" y="60" width="41" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="3vV-f2-PdZ" secondAttribute="height" multiplier="158:229" id="Qwo-A6-Z0H"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="down_half"/>
+                                                <state key="selected" image="down_half_selected"/>
+                                                <state key="highlighted" image="down_half_selected"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-gZ-BJB">
+                                                <rect key="frame" x="0.0" y="0.5" width="293.5" height="120"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3vV-f2-PdZ" firstAttribute="top" secondItem="CNq-CN-rt8" secondAttribute="centerY" id="4CZ-9q-NWM"/>
+                                            <constraint firstItem="1MB-gZ-BJB" firstAttribute="leading" secondItem="CNq-CN-rt8" secondAttribute="leading" id="4nh-sl-9An"/>
+                                            <constraint firstAttribute="centerY" secondItem="YfG-9t-vTi" secondAttribute="bottom" id="6gK-8D-n4v"/>
+                                            <constraint firstAttribute="bottom" secondItem="1MB-gZ-BJB" secondAttribute="bottom" id="8T1-Xx-JPQ"/>
+                                            <constraint firstItem="1MB-gZ-BJB" firstAttribute="top" secondItem="CNq-CN-rt8" secondAttribute="top" id="EON-Tr-wcS"/>
+                                            <constraint firstAttribute="trailing" secondItem="YfG-9t-vTi" secondAttribute="trailing" id="TRo-w3-wd2"/>
+                                            <constraint firstAttribute="trailing" secondItem="3vV-f2-PdZ" secondAttribute="trailing" id="kSW-E6-JHm"/>
+                                            <constraint firstItem="YfG-9t-vTi" firstAttribute="leading" secondItem="1MB-gZ-BJB" secondAttribute="trailing" id="nTf-4i-MAY"/>
+                                            <constraint firstItem="YfG-9t-vTi" firstAttribute="top" secondItem="CNq-CN-rt8" secondAttribute="top" id="riT-jr-XFS"/>
+                                            <constraint firstAttribute="bottom" secondItem="3vV-f2-PdZ" secondAttribute="bottom" id="xhf-OU-NBZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-mZ-V86">
+                                        <rect key="frame" x="0.0" y="390" width="335" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-bQ-COw">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="120"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmR-uB-bcJ">
+                                                <rect key="frame" x="294" y="0.0" width="41.5" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BmR-uB-bcJ" secondAttribute="height" multiplier="158:457" id="k1v-8Y-BMI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="up_full"/>
+                                                <state key="selected" image="up_full_selected"/>
+                                                <state key="highlighted" image="up_full_selected"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BmR-uB-bcJ" firstAttribute="leading" secondItem="Rny-bQ-COw" secondAttribute="trailing" id="6rX-OD-Q6w"/>
+                                            <constraint firstItem="Rny-bQ-COw" firstAttribute="leading" secondItem="uMt-mZ-V86" secondAttribute="leading" id="CA3-OS-x6I"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rny-bQ-COw" secondAttribute="bottom" id="UWP-RT-Hi3"/>
+                                            <constraint firstItem="Rny-bQ-COw" firstAttribute="top" secondItem="uMt-mZ-V86" secondAttribute="top" id="m2f-aZ-ydb"/>
+                                            <constraint firstAttribute="bottom" secondItem="BmR-uB-bcJ" secondAttribute="bottom" id="n73-jB-QAv"/>
+                                            <constraint firstItem="BmR-uB-bcJ" firstAttribute="top" secondItem="uMt-mZ-V86" secondAttribute="top" id="nNe-jq-9rO"/>
+                                            <constraint firstAttribute="trailing" secondItem="BmR-uB-bcJ" secondAttribute="trailing" id="uja-2O-JcT"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVE-BO-L6m">
+                                        <rect key="frame" x="0.0" y="520" width="335" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Kli-ov-bQK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.1617171168" blue="0.29459536079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t7w-KE-7yI" secondAttribute="trailing" constant="20" id="9BD-Hy-tBf"/>
+                            <constraint firstItem="t7w-KE-7yI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="odc-vK-dNW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t7w-KE-7yI" secondAttribute="bottom" id="u8L-q6-Z5u"/>
+                            <constraint firstItem="t7w-KE-7yI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uXf-Lf-7gx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstEventLabel" destination="NVT-ux-bsH" id="t2U-R2-0HQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="down_full" width="158" height="457"/>
+        <image name="down_full_selected" width="158" height="457"/>
+        <image name="down_half" width="158" height="229"/>
+        <image name="down_half_selected" width="158" height="229"/>
+        <image name="up_full" width="158" height="457"/>
+        <image name="up_full_selected" width="158" height="457"/>
+        <image name="up_half" width="158" height="229"/>
+        <image name="up_half_selected" width="158" height="229"/>
+    </resources>
 </document>
