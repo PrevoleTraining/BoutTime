@@ -37,8 +37,8 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVT-ux-bsH">
                                                 <rect key="frame" x="0.0" y="0.0" width="293.5" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                                <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -73,11 +73,11 @@
                                                 <state key="selected" image="down_half_selected"/>
                                                 <state key="highlighted" image="down_half_selected"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-xd-Y8K">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-xd-Y8K" userLabel="Second Event Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="294.5" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                                <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -116,11 +116,11 @@
                                                 <state key="selected" image="down_half_selected"/>
                                                 <state key="highlighted" image="down_half_selected"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-gZ-BJB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-gZ-BJB" userLabel="Third Event Label">
                                                 <rect key="frame" x="0.0" y="0.5" width="293.5" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                                <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -140,13 +140,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-mZ-V86">
                                         <rect key="frame" x="0.0" y="390" width="335" height="120"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-bQ-COw">
-                                                <rect key="frame" x="0.0" y="0.0" width="294" height="120"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmR-uB-bcJ">
                                                 <rect key="frame" x="294" y="0.0" width="41.5" height="120"/>
                                                 <constraints>
@@ -156,6 +149,13 @@
                                                 <state key="selected" image="up_full_selected"/>
                                                 <state key="highlighted" image="up_full_selected"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-bQ-COw" userLabel="Fourth Event Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="120"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                                <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="BmR-uB-bcJ" firstAttribute="leading" secondItem="Rny-bQ-COw" secondAttribute="trailing" id="6rX-OD-Q6w"/>
@@ -169,8 +169,54 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVE-BO-L6m">
                                         <rect key="frame" x="0.0" y="520" width="335" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ea-y6-XJG" userLabel="Timer Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="dc5-KB-JfU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap events to learn more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-y2-CSP" userLabel="Info Label">
+                                                <rect key="frame" x="0.0" y="60" width="335" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="5Pc-49-Vxo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" red="0.19847723841667175" green="0.56266999244689941" blue="0.70875757932662964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCK-c1-tCa" userLabel="Sucess Next Round Button">
+                                                <rect key="frame" x="52.5" y="0.0" width="230" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="R7s-13-WdK"/>
+                                                    <constraint firstAttribute="width" constant="230" id="vza-Jw-SAQ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="next_round_success"/>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ps-xB-W82" userLabel="Failure Next Round Button">
+                                                <rect key="frame" x="52" y="0.0" width="230" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="DcE-Jg-olN"/>
+                                                    <constraint firstAttribute="width" constant="230" id="I40-Jm-Njm"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="next_round_fail"/>
+                                            </button>
+                                        </subviews>
                                         <constraints>
+                                            <constraint firstItem="2ps-xB-W82" firstAttribute="centerX" secondItem="IVE-BO-L6m" secondAttribute="centerX" id="6Ae-Xc-zft"/>
+                                            <constraint firstItem="6ei-y2-CSP" firstAttribute="leading" secondItem="IVE-BO-L6m" secondAttribute="leading" id="9Je-Zh-LDU"/>
+                                            <constraint firstItem="6ei-y2-CSP" firstAttribute="top" secondItem="IVE-BO-L6m" secondAttribute="centerY" id="Ct3-w8-gSv"/>
+                                            <constraint firstAttribute="trailing" secondItem="6ei-y2-CSP" secondAttribute="trailing" id="GIW-zH-8Tm"/>
                                             <constraint firstAttribute="height" constant="120" id="Kli-ov-bQK"/>
+                                            <constraint firstItem="2ps-xB-W82" firstAttribute="top" secondItem="IVE-BO-L6m" secondAttribute="top" id="KtJ-wZ-rKP"/>
+                                            <constraint firstAttribute="trailing" secondItem="9ea-y6-XJG" secondAttribute="trailing" id="Uqz-PY-DGX"/>
+                                            <constraint firstItem="TCK-c1-tCa" firstAttribute="centerX" secondItem="IVE-BO-L6m" secondAttribute="centerX" id="fPr-Vs-t7l"/>
+                                            <constraint firstAttribute="centerY" secondItem="9ea-y6-XJG" secondAttribute="bottom" id="gAG-c1-3yC"/>
+                                            <constraint firstItem="9ea-y6-XJG" firstAttribute="leading" secondItem="IVE-BO-L6m" secondAttribute="leading" id="kLS-vq-os1"/>
+                                            <constraint firstItem="TCK-c1-tCa" firstAttribute="top" secondItem="IVE-BO-L6m" secondAttribute="top" id="oA8-Zy-bfM"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -187,11 +233,113 @@
                     </view>
                     <connections>
                         <outlet property="firstEventLabel" destination="NVT-ux-bsH" id="t2U-R2-0HQ"/>
+                        <outlet property="fourthEventLabel" destination="Rny-bQ-COw" id="LIH-4g-VbQ"/>
+                        <outlet property="secondEventLabel" destination="SXb-xd-Y8K" id="7OD-nE-3ZC"/>
+                        <outlet property="thirdEventLabel" destination="1MB-gZ-BJB" id="sPX-mC-Euk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AAL-Lx-6Du">
+            <objects>
+                <viewController id="Dm9-k3-USj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="81x-0y-goU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sig-1I-FlH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webview_bar" translatesAutoresizingMaskIntoConstraints="NO" id="hH0-kh-iig">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DV9-ur-ji7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqK-j7-oM2">
+                                <rect key="frame" x="325" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="B8u-TJ-VuW"/>
+                                    <constraint firstAttribute="height" constant="50" id="UaX-00-TsO"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.16171711683273315" blue="0.29459536075592041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sig-1I-FlH" firstAttribute="leading" secondItem="Hg4-lM-NgI" secondAttribute="leading" id="GRI-tY-Fnn"/>
+                            <constraint firstItem="hH0-kh-iig" firstAttribute="top" secondItem="Hg4-lM-NgI" secondAttribute="top" id="GaX-b1-vY6"/>
+                            <constraint firstItem="Sig-1I-FlH" firstAttribute="bottom" secondItem="Hg4-lM-NgI" secondAttribute="bottom" id="HOl-Se-ugA"/>
+                            <constraint firstItem="Sig-1I-FlH" firstAttribute="trailing" secondItem="Hg4-lM-NgI" secondAttribute="trailing" id="IDn-Uk-IUj"/>
+                            <constraint firstItem="hH0-kh-iig" firstAttribute="leading" secondItem="Hg4-lM-NgI" secondAttribute="leading" id="LuI-s6-irS"/>
+                            <constraint firstItem="mqK-j7-oM2" firstAttribute="top" secondItem="Hg4-lM-NgI" secondAttribute="top" id="iOz-uw-9FV"/>
+                            <constraint firstItem="Hg4-lM-NgI" firstAttribute="trailing" secondItem="hH0-kh-iig" secondAttribute="trailing" id="mrp-7R-i0g"/>
+                            <constraint firstItem="Sig-1I-FlH" firstAttribute="top" secondItem="Hg4-lM-NgI" secondAttribute="top" id="s9m-lV-m9N"/>
+                            <constraint firstItem="mqK-j7-oM2" firstAttribute="trailing" secondItem="Hg4-lM-NgI" secondAttribute="trailing" id="v5w-lv-cLC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hg4-lM-NgI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9O-gl-6ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="425.93703148425789"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yg7-Nn-Yjt">
+            <objects>
+                <viewController id="DpE-2L-d6H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MPk-TP-Z62">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9J-OJ-ugS">
+                                <rect key="frame" x="0.0" y="207" width="375" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.19847723840000001" green="0.56266999240000004" blue="0.70875757930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G1-4k-jn0">
+                                <rect key="frame" x="112.5" y="373.5" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OOu-bA-ZNv"/>
+                                    <constraint firstAttribute="width" constant="150" id="Wja-yn-Iqs"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="play_again"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEJ-Oc-C21">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="u8d-Wp-Fv7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.16171711683273315" blue="0.29459536075592041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5G1-4k-jn0" firstAttribute="centerX" secondItem="MPk-TP-Z62" secondAttribute="centerX" id="2VX-9p-b2V"/>
+                            <constraint firstItem="7lz-UT-wde" firstAttribute="centerY" secondItem="fEJ-Oc-C21" secondAttribute="bottom" constant="40" id="HAT-zh-fnq"/>
+                            <constraint firstItem="5G1-4k-jn0" firstAttribute="top" secondItem="MPk-TP-Z62" secondAttribute="centerY" constant="40" id="JFG-mo-sYN"/>
+                            <constraint firstItem="fEJ-Oc-C21" firstAttribute="top" secondItem="x9J-OJ-ugS" secondAttribute="bottom" id="f5h-Qa-XeD"/>
+                            <constraint firstItem="7lz-UT-wde" firstAttribute="trailing" secondItem="x9J-OJ-ugS" secondAttribute="trailing" id="h6e-pN-zow"/>
+                            <constraint firstItem="x9J-OJ-ugS" firstAttribute="leading" secondItem="7lz-UT-wde" secondAttribute="leading" id="kTh-c9-3dD"/>
+                            <constraint firstItem="7lz-UT-wde" firstAttribute="trailing" secondItem="fEJ-Oc-C21" secondAttribute="trailing" id="pjF-O5-bo6"/>
+                            <constraint firstItem="fEJ-Oc-C21" firstAttribute="leading" secondItem="7lz-UT-wde" secondAttribute="leading" id="xxB-bJ-hFI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7lz-UT-wde"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taq-tO-vOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="-274"/>
         </scene>
     </scenes>
     <resources>
@@ -199,9 +347,13 @@
         <image name="down_full_selected" width="158" height="457"/>
         <image name="down_half" width="158" height="229"/>
         <image name="down_half_selected" width="158" height="229"/>
+        <image name="next_round_fail" width="558" height="142"/>
+        <image name="next_round_success" width="558" height="142"/>
+        <image name="play_again" width="450" height="142"/>
         <image name="up_full" width="158" height="457"/>
         <image name="up_full_selected" width="158" height="457"/>
         <image name="up_half" width="158" height="229"/>
         <image name="up_half_selected" width="158" height="229"/>
+        <image name="webview_bar" width="1333" height="167"/>
     </resources>
 </document>
