@@ -10,6 +10,17 @@
 		FD56DD821FE32B2D004A62A6 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD56DD811FE32B2D004A62A6 /* events.plist */; };
 		FD56DD841FE34676004A62A6 /* PListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD831FE34676004A62A6 /* PListConverter.swift */; };
 		FD56DD861FE3471B004A62A6 /* PListConverterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD851FE3471B004A62A6 /* PListConverterError.swift */; };
+		FD56DD881FE3A1BE004A62A6 /* Eventable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD871FE3A1BE004A62A6 /* Eventable.swift */; };
+		FD56DD8B1FE3A391004A62A6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD8A1FE3A391004A62A6 /* Event.swift */; };
+		FD56DD8D1FE3A492004A62A6 /* EventCollectionUnarchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD8C1FE3A492004A62A6 /* EventCollectionUnarchiver.swift */; };
+		FD56DD8F1FE3A76F004A62A6 /* EventProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD8E1FE3A76F004A62A6 /* EventProvidable.swift */; };
+		FD56DD911FE3B127004A62A6 /* EventProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD901FE3B127004A62A6 /* EventProvider.swift */; };
+		FD56DD941FE3B33E004A62A6 /* Gamable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD931FE3B33E004A62A6 /* Gamable.swift */; };
+		FD56DD961FE3BDC2004A62A6 /* EvaluationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD951FE3BDC2004A62A6 /* EvaluationResult.swift */; };
+		FD56DD981FE3BE71004A62A6 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD971FE3BE71004A62A6 /* GameEngine.swift */; };
+		FD56DD9A1FE3C613004A62A6 /* EventDescriptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD991FE3C613004A62A6 /* EventDescriptable.swift */; };
+		FD56DD9C1FE3C834004A62A6 /* Scorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD9B1FE3C834004A62A6 /* Scorable.swift */; };
+		FD56DD9E1FE3C863004A62A6 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD9D1FE3C863004A62A6 /* Score.swift */; };
 		FDBF47681FE08B6200E78992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47671FE08B6200E78992 /* AppDelegate.swift */; };
 		FDBF476A1FE08B6200E78992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47691FE08B6200E78992 /* ViewController.swift */; };
 		FDBF476D1FE08B6200E78992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF476B1FE08B6200E78992 /* Main.storyboard */; };
@@ -22,6 +33,17 @@
 		FD56DD811FE32B2D004A62A6 /* events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
 		FD56DD831FE34676004A62A6 /* PListConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListConverter.swift; sourceTree = "<group>"; };
 		FD56DD851FE3471B004A62A6 /* PListConverterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListConverterError.swift; sourceTree = "<group>"; };
+		FD56DD871FE3A1BE004A62A6 /* Eventable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventable.swift; sourceTree = "<group>"; };
+		FD56DD8A1FE3A391004A62A6 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FD56DD8C1FE3A492004A62A6 /* EventCollectionUnarchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionUnarchiver.swift; sourceTree = "<group>"; };
+		FD56DD8E1FE3A76F004A62A6 /* EventProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProvidable.swift; sourceTree = "<group>"; };
+		FD56DD901FE3B127004A62A6 /* EventProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProvider.swift; sourceTree = "<group>"; };
+		FD56DD931FE3B33E004A62A6 /* Gamable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamable.swift; sourceTree = "<group>"; };
+		FD56DD951FE3BDC2004A62A6 /* EvaluationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationResult.swift; sourceTree = "<group>"; };
+		FD56DD971FE3BE71004A62A6 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		FD56DD991FE3C613004A62A6 /* EventDescriptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDescriptable.swift; sourceTree = "<group>"; };
+		FD56DD9B1FE3C834004A62A6 /* Scorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorable.swift; sourceTree = "<group>"; };
+		FD56DD9D1FE3C863004A62A6 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		FDBF47641FE08B6200E78992 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF47671FE08B6200E78992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDBF47691FE08B6200E78992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +71,33 @@
 				FD56DD811FE32B2D004A62A6 /* events.plist */,
 				FD56DD831FE34676004A62A6 /* PListConverter.swift */,
 				FD56DD851FE3471B004A62A6 /* PListConverterError.swift */,
+				FD56DD8C1FE3A492004A62A6 /* EventCollectionUnarchiver.swift */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		FD56DD891FE3A379004A62A6 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				FD56DD871FE3A1BE004A62A6 /* Eventable.swift */,
+				FD56DD8A1FE3A391004A62A6 /* Event.swift */,
+				FD56DD8E1FE3A76F004A62A6 /* EventProvidable.swift */,
+				FD56DD901FE3B127004A62A6 /* EventProvider.swift */,
+				FD56DD991FE3C613004A62A6 /* EventDescriptable.swift */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		FD56DD921FE3B32B004A62A6 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				FD56DD931FE3B33E004A62A6 /* Gamable.swift */,
+				FD56DD951FE3BDC2004A62A6 /* EvaluationResult.swift */,
+				FD56DD971FE3BE71004A62A6 /* GameEngine.swift */,
+				FD56DD9B1FE3C834004A62A6 /* Scorable.swift */,
+				FD56DD9D1FE3C863004A62A6 /* Score.swift */,
+			);
+			path = engine;
 			sourceTree = "<group>";
 		};
 		FDBF475B1FE08B6200E78992 = {
@@ -72,6 +119,8 @@
 		FDBF47661FE08B6200E78992 /* BoutTime */ = {
 			isa = PBXGroup;
 			children = (
+				FD56DD921FE3B32B004A62A6 /* engine */,
+				FD56DD891FE3A379004A62A6 /* event */,
 				FD56DD801FE32B08004A62A6 /* data */,
 				FDC1E8181FE2EDD1000389B7 /* extensions */,
 				FDBF47671FE08B6200E78992 /* AppDelegate.swift */,
@@ -166,10 +215,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBF476A1FE08B6200E78992 /* ViewController.swift in Sources */,
+				FD56DD981FE3BE71004A62A6 /* GameEngine.swift in Sources */,
+				FD56DD9E1FE3C863004A62A6 /* Score.swift in Sources */,
 				FD56DD861FE3471B004A62A6 /* PListConverterError.swift in Sources */,
 				FDC1E81A1FE2EDF0000389B7 /* UILabelExtension.swift in Sources */,
+				FD56DD911FE3B127004A62A6 /* EventProvider.swift in Sources */,
+				FD56DD961FE3BDC2004A62A6 /* EvaluationResult.swift in Sources */,
+				FD56DD8F1FE3A76F004A62A6 /* EventProvidable.swift in Sources */,
 				FDBF47681FE08B6200E78992 /* AppDelegate.swift in Sources */,
+				FD56DD881FE3A1BE004A62A6 /* Eventable.swift in Sources */,
+				FD56DD9C1FE3C834004A62A6 /* Scorable.swift in Sources */,
+				FD56DD9A1FE3C613004A62A6 /* EventDescriptable.swift in Sources */,
+				FD56DD8B1FE3A391004A62A6 /* Event.swift in Sources */,
 				FD56DD841FE34676004A62A6 /* PListConverter.swift in Sources */,
+				FD56DD941FE3B33E004A62A6 /* Gamable.swift in Sources */,
+				FD56DD8D1FE3A492004A62A6 /* EventCollectionUnarchiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

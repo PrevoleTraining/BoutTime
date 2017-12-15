@@ -9,14 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let numberOfRounds = 6
+    let eventsPerRound = 4
 
     let labelsPadding = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     let labelsFont = UIFont.boldSystemFont(ofSize: 22.0)
 
+    let gameEngine: Gamable
+    
     @IBOutlet weak var firstEventLabel: UILabel!
     @IBOutlet weak var secondEventLabel: UILabel!
     @IBOutlet weak var thirdEventLabel: UILabel!
     @IBOutlet weak var fourthEventLabel: UILabel!
+    
+    required init?(coder aDecoder: NSCoder) {
+        do {
+            let array = try PlistConverter.array(fromFile: "events", ofType: "plist")
+            let events = try EventCollectionUnarchiver.events(fromArray: array)
+            print(events)
+            let eventProvider = EventProvider(events: events)
+            self.gameEngine = GameEngine(numberOfRounds: numberOfRounds, eventsPerRound: eventsPerRound, eventProvider: eventProvider)
+        } catch let error {
+            fatalError("\(error)")
+        }
+        
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

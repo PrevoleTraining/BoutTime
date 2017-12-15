@@ -13,7 +13,7 @@ class PlistConverter {
     /// Load an array from a plist file
     ///
     static func array(fromFile name: String, ofType type: String) throws -> [AnyObject] {
-        guard let url = Bundle.main.url(forResource: name, ofType: type) else {
+        guard let url = Bundle.main.url(forResource: name, withExtension: type) else {
             throw PListConverterError.invalidResource
         }
         
