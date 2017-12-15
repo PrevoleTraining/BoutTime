@@ -33,13 +33,20 @@
                                                 </constraints>
                                                 <state key="normal" title="Button" image="down_full"/>
                                                 <state key="highlighted" image="down_full_selected"/>
+                                                <connections>
+                                                    <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GxQ-Wj-oF7"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVT-ux-bsH">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVT-ux-bsH">
                                                 <rect key="frame" x="0.0" y="0.0" width="293.5" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                                                 <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="eGu-2J-NLS" appends="YES" id="5sW-Gb-Ib6"/>
+                                                </connections>
                                             </label>
                                         </subviews>
                                         <constraints>
@@ -63,6 +70,9 @@
                                                 <state key="normal" title="Button" image="up_half"/>
                                                 <state key="selected" image="up_half_selected"/>
                                                 <state key="highlighted" image="up_half_selected"/>
+                                                <connections>
+                                                    <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nz4-mh-4Kd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uV-he-IDU">
                                                 <rect key="frame" x="294" y="60" width="41" height="60"/>
@@ -72,13 +82,20 @@
                                                 <state key="normal" title="Button" image="down_half"/>
                                                 <state key="selected" image="down_half_selected"/>
                                                 <state key="highlighted" image="down_half_selected"/>
+                                                <connections>
+                                                    <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYA-W9-QJ4"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-xd-Y8K" userLabel="Second Event Label">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-xd-Y8K" userLabel="Second Event Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="294.5" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                                                 <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="pMH-Fv-hAm" appends="YES" id="PKc-pJ-Lc3"/>
+                                                </connections>
                                             </label>
                                         </subviews>
                                         <constraints>
@@ -106,6 +123,9 @@
                                                 <state key="normal" title="Button" image="up_half"/>
                                                 <state key="selected" image="up_half_selected"/>
                                                 <state key="highlighted" image="up_half_selected"/>
+                                                <connections>
+                                                    <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjr-bH-II1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vV-f2-PdZ">
                                                 <rect key="frame" x="294" y="60" width="41" height="60"/>
@@ -115,13 +135,20 @@
                                                 <state key="normal" title="Button" image="down_half"/>
                                                 <state key="selected" image="down_half_selected"/>
                                                 <state key="highlighted" image="down_half_selected"/>
+                                                <connections>
+                                                    <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgc-TO-uzy"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-gZ-BJB" userLabel="Third Event Label">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-gZ-BJB" userLabel="Third Event Label">
                                                 <rect key="frame" x="0.0" y="0.5" width="293.5" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                                                 <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="CsO-HA-ESW" appends="YES" id="il6-To-qxn"/>
+                                                </connections>
                                             </label>
                                         </subviews>
                                         <constraints>
@@ -148,13 +175,20 @@
                                                 <state key="normal" title="Button" image="up_full"/>
                                                 <state key="selected" image="up_full_selected"/>
                                                 <state key="highlighted" image="up_full_selected"/>
+                                                <connections>
+                                                    <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rud-o9-rgf"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-bQ-COw" userLabel="Fourth Event Label">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-bQ-COw" userLabel="Fourth Event Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="294" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                                                 <color key="textColor" red="0.064857184890000003" green="0.374642849" blue="0.49553114180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="qEE-Wn-66B" appends="YES" id="Fjh-ay-XCR"/>
+                                                </connections>
                                             </label>
                                         </subviews>
                                         <constraints>
@@ -232,13 +266,43 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="failureButton" destination="2ps-xB-W82" id="pRR-AO-DiF"/>
+                        <outlet property="firstDownButton" destination="L3N-8f-Jqh" id="hyJ-o5-icF"/>
                         <outlet property="firstEventLabel" destination="NVT-ux-bsH" id="t2U-R2-0HQ"/>
                         <outlet property="fourthEventLabel" destination="Rny-bQ-COw" id="LIH-4g-VbQ"/>
+                        <outlet property="fourthUpButton" destination="BmR-uB-bcJ" id="pH6-tc-soF"/>
+                        <outlet property="quickHelpLabel" destination="6ei-y2-CSP" id="HiB-Vo-BXf"/>
+                        <outlet property="secondDownButton" destination="1uV-he-IDU" id="dbq-wZ-pPh"/>
                         <outlet property="secondEventLabel" destination="SXb-xd-Y8K" id="7OD-nE-3ZC"/>
+                        <outlet property="secondUpButton" destination="f14-dT-ONz" id="Jrh-Jh-H13"/>
+                        <outlet property="successButton" destination="TCK-c1-tCa" id="385-XS-AfG"/>
+                        <outlet property="thirdDownButton" destination="3vV-f2-PdZ" id="as1-Xj-lWB"/>
                         <outlet property="thirdEventLabel" destination="1MB-gZ-BJB" id="sPX-mC-Euk"/>
+                        <outlet property="thirdUpButton" destination="YfG-9t-vTi" id="co0-Ib-mCa"/>
+                        <outlet property="timerLabel" destination="9ea-y6-XJG" id="9v4-bI-UEX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eGu-2J-NLS" userLabel="First Label Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="showEvent:" destination="BYZ-38-t0r" id="N0b-gh-FSl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pMH-Fv-hAm" userLabel="Second Label Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="showEvent:" destination="BYZ-38-t0r" id="H21-dT-mla"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CsO-HA-ESW" userLabel="Third Label Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="showEvent:" destination="BYZ-38-t0r" id="rb9-uK-IBC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qEE-Wn-66B" userLabel="Fourth Label Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="showEvent:" destination="BYZ-38-t0r" id="DeO-A2-2TD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
