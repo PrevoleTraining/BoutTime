@@ -51,10 +51,11 @@ class GameEngine: Gamable {
         return currentEvents
     }
     
-    func permute(firstEvent left: Int, secondEvent right: Int) {
+    func permute(firstEvent left: Int, secondEvent right: Int) -> [EventDescriptable] {
         let bubbleEvent = currentEvents[left]
         currentEvents[left] = currentEvents[right]
         currentEvents[right] = bubbleEvent
+        return currentEvents
     }
     
     func score() -> Scorable {
@@ -65,5 +66,11 @@ class GameEngine: Gamable {
         }
         
         return Score(score: score, scoreMax: evaluations.count)
+    }
+    
+    func retrieveSolution() -> [EventDescriptable] {
+        return currentEvents.sorted {
+            return $0.isBefore(event: $1)
+        }
     }
 }

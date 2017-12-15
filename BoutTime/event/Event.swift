@@ -22,4 +22,8 @@ class Event: Eventable {
     func isBefore(event: Eventable) -> Bool {
         return year < event.year || (year == event.year && order < event.order)
     }
+    
+    func isEqual(other: EventDescriptable) -> Bool {
+        return title == other.title
+    }
 }

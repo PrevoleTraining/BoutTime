@@ -13,6 +13,7 @@ protocol Gamable {
     func evaluate() -> EvaluationResult
     func hasNextRound() -> Bool
     func nextRound() -> [EventDescriptable]
-    func permute(firstEvent left: Int, secondEvent right: Int)
+    func permute(firstEvent left: Int, secondEvent right: Int) -> [EventDescriptable]
     func score() -> Scorable
+    func retrieveSolution() -> [EventDescriptable]
 }

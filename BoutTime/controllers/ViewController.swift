@@ -27,6 +27,10 @@ class ViewController: UIViewController {
     
     var eventLabels: [UILabel] = []
     
+    static let wrongColor = UIColor(red: 199/255, green: 64/255, blue: 40/255, alpha: 1)
+    static let correctColor = UIColor(red: 30/255, green: 141/255, blue: 61/255, alpha: 1)
+    static let labelTextColor = UIColor(red: 0/255, green: 41/255, blue: 75/255, alpha: 1)
+    
     @IBOutlet weak var quickHelpLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -82,10 +86,24 @@ class ViewController: UIViewController {
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            print("Hey! Take care of me!")
+            evaluate()
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is EventDetailsViewController {
+            let destination = segue.destination as! EventDetailsViewController
+            
+            if sender is UIGestureRecognizer {
+                let label = (sender as! UIGestureRecognizer).view as! UILabel
+                
+                if let eventIndex = eventLabels.index(of: label) {
+                    destination.url = events[eventIndex].url
+                }
+            }
+        }
+    }
+
     // MARK: - Actions
     
     @IBAction func permute(_ sender: UIButton) {
@@ -113,30 +131,69 @@ class ViewController: UIViewController {
         label.font = labelsFont
     }
     
-    func updateText(for label: UILabel, with text: String) {
-        label.text = text
+    func updateLabelWith(_ label: UILabel, text: String? = nil, canBeTouched: Bool? = false,
+                         backgroundColor: UIColor = UIColor.white, textColor: UIColor = labelTextColor) {
+        if let text = text {
+            label.text = text
+        }
+        
+        if let canBeTouched = canBeTouched {
+            label.isUserInteractionEnabled = canBeTouched
+        }
+        
+        label.backgroundColor = backgroundColor
+        label.textColor = textColor
     }
     
     // MARK: - Game
     
     func newGame() {
         quickHelpLabel.text = QuickHelpText.shake.rawValue
+        timerLabel.isHidden = false
         
         events = gameEngine.newGame()
         
         for index in 0..<events.count {
-            updateText(for: eventLabels[index], with: events[index].title)
+            updateLabelWith(eventLabels[index], text: events[index].title, canBeTouched: false)
         }
+    }
+    
+    func evaluate() {
+        quickHelpLabel.text = QuickHelpText.eventInfo.rawValue
+        timerLabel.isHidden = true
+        
+        let result = gameEngine.evaluate()
+
+        if gameEngine.hasNextRound() {
+            switch result {
+            case .correct:
+                successButton.isHidden = false
+            case .incorrect:
+                failureButton.isHidden = false
+            }
+            
+            let solution = gameEngine.retrieveSolution()
+            
+            for (index, eventLabel) in eventLabels.enumerated() {
+                updateLabelWith(eventLabel, canBeTouched: true)
+                
+                if solution[index].isEqual(other: events[index]) {
+                    updateLabelWith(eventLabel, backgroundColor: ViewController.correctColor, textColor: UIColor.white)
+                } else {
+                    updateLabelWith(eventLabel, backgroundColor: ViewController.wrongColor, textColor: UIColor.white)
+                }
+            }
+        }        
     }
     
     func permute(first firstLabel: UILabel, second secondLabel: UILabel) {
         if let firstIndex = eventLabels.index(of: firstLabel),
             let secondIndex = eventLabels.index(of: secondLabel) {
-            gameEngine.permute(firstEvent: firstIndex, secondEvent: secondIndex)
             
-            let bubbleText = firstLabel.text
-            firstLabel.text = secondLabel.text
-            secondLabel.text = bubbleText
+            events = gameEngine.permute(firstEvent: firstIndex, secondEvent: secondIndex)
+            
+            firstLabel.text = events[firstIndex].title
+            secondLabel.text = events[secondIndex].title
         }
     }
 }

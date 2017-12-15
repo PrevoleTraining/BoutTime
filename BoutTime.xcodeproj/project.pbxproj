@@ -21,6 +21,8 @@
 		FD56DD9A1FE3C613004A62A6 /* EventDescriptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD991FE3C613004A62A6 /* EventDescriptable.swift */; };
 		FD56DD9C1FE3C834004A62A6 /* Scorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD9B1FE3C834004A62A6 /* Scorable.swift */; };
 		FD56DD9E1FE3C863004A62A6 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD9D1FE3C863004A62A6 /* Score.swift */; };
+		FD56DDA31FE3FBEE004A62A6 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */; };
+		FD56DDA61FE3FDED004A62A6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56DDA51FE3FDED004A62A6 /* WebKit.framework */; };
 		FDBF47681FE08B6200E78992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47671FE08B6200E78992 /* AppDelegate.swift */; };
 		FDBF476A1FE08B6200E78992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47691FE08B6200E78992 /* ViewController.swift */; };
 		FDBF476D1FE08B6200E78992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF476B1FE08B6200E78992 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		FD56DD991FE3C613004A62A6 /* EventDescriptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDescriptable.swift; sourceTree = "<group>"; };
 		FD56DD9B1FE3C834004A62A6 /* Scorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorable.swift; sourceTree = "<group>"; };
 		FD56DD9D1FE3C863004A62A6 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		FD56DDA51FE3FDED004A62A6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FDBF47641FE08B6200E78992 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF47671FE08B6200E78992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDBF47691FE08B6200E78992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD56DDA61FE3FDED004A62A6 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,11 +105,29 @@
 			path = engine;
 			sourceTree = "<group>";
 		};
+		FD56DD9F1FE3FBAC004A62A6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDBF47691FE08B6200E78992 /* ViewController.swift */,
+				FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		FD56DDA41FE3FDEC004A62A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD56DDA51FE3FDED004A62A6 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDBF475B1FE08B6200E78992 = {
 			isa = PBXGroup;
 			children = (
 				FDBF47661FE08B6200E78992 /* BoutTime */,
 				FDBF47651FE08B6200E78992 /* Products */,
+				FD56DDA41FE3FDEC004A62A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,12 +142,12 @@
 		FDBF47661FE08B6200E78992 /* BoutTime */ = {
 			isa = PBXGroup;
 			children = (
+				FD56DD9F1FE3FBAC004A62A6 /* controllers */,
 				FD56DD921FE3B32B004A62A6 /* engine */,
 				FD56DD891FE3A379004A62A6 /* event */,
 				FD56DD801FE32B08004A62A6 /* data */,
 				FDC1E8181FE2EDD1000389B7 /* extensions */,
 				FDBF47671FE08B6200E78992 /* AppDelegate.swift */,
-				FDBF47691FE08B6200E78992 /* ViewController.swift */,
 				FDBF476B1FE08B6200E78992 /* Main.storyboard */,
 				FDBF476E1FE08B6200E78992 /* Assets.xcassets */,
 				FDBF47701FE08B6200E78992 /* LaunchScreen.storyboard */,
@@ -230,6 +253,7 @@
 				FD56DD841FE34676004A62A6 /* PListConverter.swift in Sources */,
 				FD56DD941FE3B33E004A62A6 /* Gamable.swift in Sources */,
 				FD56DD8D1FE3A492004A62A6 /* EventCollectionUnarchiver.swift in Sources */,
+				FD56DDA31FE3FBEE004A62A6 /* EventDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

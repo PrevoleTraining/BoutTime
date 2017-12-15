@@ -21,13 +21,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t7w-KE-7yI">
-                                <rect key="frame" x="20" y="20" width="335" height="640"/>
+                                <rect key="frame" x="20" y="20" width="335" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3o7-6a-o9i">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="121.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3N-8f-Jqh">
-                                                <rect key="frame" x="293.5" y="0.0" width="41.5" height="120"/>
+                                                <rect key="frame" x="293" y="0.0" width="42" height="121.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="L3N-8f-Jqh" secondAttribute="height" multiplier="158:457" id="BOF-kW-hSA"/>
                                                 </constraints>
@@ -37,8 +37,8 @@
                                                     <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GxQ-Wj-oF7"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVT-ux-bsH">
-                                                <rect key="frame" x="0.0" y="0.0" width="293.5" height="120"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVT-ux-bsH">
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="121.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -60,10 +60,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-Gj-zGB">
-                                        <rect key="frame" x="0.0" y="130" width="335" height="120"/>
+                                        <rect key="frame" x="0.0" y="131.5" width="335" height="121.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f14-dT-ONz">
-                                                <rect key="frame" x="294" y="0.0" width="41" height="60"/>
+                                                <rect key="frame" x="293.5" y="0.0" width="41.5" height="60.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="f14-dT-ONz" secondAttribute="height" multiplier="158:229" id="Q5R-SH-E9z"/>
                                                 </constraints>
@@ -75,7 +75,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uV-he-IDU">
-                                                <rect key="frame" x="294" y="60" width="41" height="60"/>
+                                                <rect key="frame" x="293.5" y="60.5" width="41.5" height="61"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1uV-he-IDU" secondAttribute="height" multiplier="158:229" id="9Xn-YT-11V"/>
                                                 </constraints>
@@ -86,8 +86,8 @@
                                                     <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYA-W9-QJ4"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-xd-Y8K" userLabel="Second Event Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="294.5" height="120"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-xd-Y8K" userLabel="Second Event Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="121.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -113,10 +113,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNq-CN-rt8">
-                                        <rect key="frame" x="0.0" y="260" width="335" height="120"/>
+                                        <rect key="frame" x="0.0" y="263" width="335" height="121"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-9t-vTi">
-                                                <rect key="frame" x="293.5" y="0.5" width="41.5" height="60"/>
+                                                <rect key="frame" x="293" y="0.5" width="42" height="60.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="YfG-9t-vTi" secondAttribute="height" multiplier="158:229" id="aUX-an-yT9"/>
                                                 </constraints>
@@ -128,7 +128,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vV-f2-PdZ">
-                                                <rect key="frame" x="294" y="60" width="41" height="60"/>
+                                                <rect key="frame" x="293.5" y="60.5" width="41.5" height="60.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3vV-f2-PdZ" secondAttribute="height" multiplier="158:229" id="Qwo-A6-Z0H"/>
                                                 </constraints>
@@ -139,8 +139,8 @@
                                                     <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgc-TO-uzy"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-gZ-BJB" userLabel="Third Event Label">
-                                                <rect key="frame" x="0.0" y="0.5" width="293.5" height="120"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-gZ-BJB" userLabel="Third Event Label">
+                                                <rect key="frame" x="0.0" y="0.5" width="293" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -165,10 +165,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-mZ-V86">
-                                        <rect key="frame" x="0.0" y="390" width="335" height="120"/>
+                                        <rect key="frame" x="0.0" y="394" width="335" height="121.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmR-uB-bcJ">
-                                                <rect key="frame" x="294" y="0.0" width="41.5" height="120"/>
+                                                <rect key="frame" x="293.5" y="0.0" width="42" height="121.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BmR-uB-bcJ" secondAttribute="height" multiplier="158:457" id="k1v-8Y-BMI"/>
                                                 </constraints>
@@ -179,8 +179,8 @@
                                                     <action selector="permute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rud-o9-rgf"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-bQ-COw" userLabel="Fourth Event Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="294" height="120"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sputnik was launched by the USSR" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-bQ-COw" userLabel="Fourth Event Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="293.5" height="121.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -202,10 +202,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVE-BO-L6m">
-                                        <rect key="frame" x="0.0" y="520" width="335" height="120"/>
+                                        <rect key="frame" x="0.0" y="525.5" width="335" height="121.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ea-y6-XJG" userLabel="Timer Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                                <rect key="frame" x="0.0" y="1" width="335" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="dc5-KB-JfU"/>
                                                 </constraints>
@@ -214,7 +214,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap events to learn more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-y2-CSP" userLabel="Info Label">
-                                                <rect key="frame" x="0.0" y="60" width="335" height="30"/>
+                                                <rect key="frame" x="0.0" y="61" width="335" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="5Pc-49-Vxo"/>
                                                 </constraints>
@@ -286,38 +286,43 @@
                 <tapGestureRecognizer id="eGu-2J-NLS" userLabel="First Label Tap Gesture Recognizer">
                     <connections>
                         <action selector="showEvent:" destination="BYZ-38-t0r" id="N0b-gh-FSl"/>
+                        <segue destination="Dm9-k3-USj" kind="presentation" id="fJY-wm-he0"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="pMH-Fv-hAm" userLabel="Second Label Tap Gesture Recognizer">
                     <connections>
                         <action selector="showEvent:" destination="BYZ-38-t0r" id="H21-dT-mla"/>
+                        <segue destination="Dm9-k3-USj" kind="presentation" id="DVu-K1-Qug"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="CsO-HA-ESW" userLabel="Third Label Tap Gesture Recognizer">
                     <connections>
                         <action selector="showEvent:" destination="BYZ-38-t0r" id="rb9-uK-IBC"/>
+                        <segue destination="Dm9-k3-USj" kind="presentation" id="ilp-V1-gCw"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="qEE-Wn-66B" userLabel="Fourth Label Tap Gesture Recognizer">
                     <connections>
                         <action selector="showEvent:" destination="BYZ-38-t0r" id="DeO-A2-2TD"/>
+                        <segue destination="Dm9-k3-USj" kind="presentation" id="eoR-iA-tAG"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Details View Controller-->
         <scene sceneID="AAL-Lx-6Du">
             <objects>
-                <viewController id="Dm9-k3-USj" sceneMemberID="viewController">
+                <viewController id="Dm9-k3-USj" customClass="EventDetailsViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="81x-0y-goU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sig-1I-FlH">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <wkWebView contentMode="scaleToFill" customUserAgent="" translatesAutoresizingMaskIntoConstraints="NO" id="Sig-1I-FlH">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
+                                    <dataDetectorTypes key="dataDetectorTypes"/>
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
@@ -334,6 +339,9 @@
                                     <constraint firstAttribute="width" constant="50" id="B8u-TJ-VuW"/>
                                     <constraint firstAttribute="height" constant="50" id="UaX-00-TsO"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="dismiss" destination="Dm9-k3-USj" eventType="touchUpInside" id="tuG-Kz-tQl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.16171711683273315" blue="0.29459536075592041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -343,13 +351,16 @@
                             <constraint firstItem="Sig-1I-FlH" firstAttribute="bottom" secondItem="Hg4-lM-NgI" secondAttribute="bottom" id="HOl-Se-ugA"/>
                             <constraint firstItem="Sig-1I-FlH" firstAttribute="trailing" secondItem="Hg4-lM-NgI" secondAttribute="trailing" id="IDn-Uk-IUj"/>
                             <constraint firstItem="hH0-kh-iig" firstAttribute="leading" secondItem="Hg4-lM-NgI" secondAttribute="leading" id="LuI-s6-irS"/>
+                            <constraint firstItem="Sig-1I-FlH" firstAttribute="top" secondItem="hH0-kh-iig" secondAttribute="bottom" id="Wbs-41-wGZ"/>
                             <constraint firstItem="mqK-j7-oM2" firstAttribute="top" secondItem="Hg4-lM-NgI" secondAttribute="top" id="iOz-uw-9FV"/>
                             <constraint firstItem="Hg4-lM-NgI" firstAttribute="trailing" secondItem="hH0-kh-iig" secondAttribute="trailing" id="mrp-7R-i0g"/>
-                            <constraint firstItem="Sig-1I-FlH" firstAttribute="top" secondItem="Hg4-lM-NgI" secondAttribute="top" id="s9m-lV-m9N"/>
                             <constraint firstItem="mqK-j7-oM2" firstAttribute="trailing" secondItem="Hg4-lM-NgI" secondAttribute="trailing" id="v5w-lv-cLC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hg4-lM-NgI"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="Sig-1I-FlH" id="6Ep-Dm-dLA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9O-gl-6ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,4 +431,7 @@
         <image name="up_half_selected" width="158" height="229"/>
         <image name="webview_bar" width="1333" height="167"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DVu-K1-Qug"/>
+    </inferredMetricsTieBreakers>
 </document>

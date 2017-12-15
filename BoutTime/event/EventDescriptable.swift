@@ -9,4 +9,6 @@
 protocol EventDescriptable {
     var title: String { get }
     var url: String { get }
+    
+    func isEqual(other: EventDescriptable) -> Bool
 }
