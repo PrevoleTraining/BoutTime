@@ -146,16 +146,14 @@ class ViewController: UIViewController {
         label.font = labelsFont
     }
     
-    func updateLabelWith(_ label: UILabel, text: String? = nil, canBeTouched: Bool? = false,
+    func updateLabelWith(_ label: UILabel, text: String? = nil, canBeTouched: Bool = false,
                          backgroundColor: UIColor = UIColor.white, textColor: UIColor = labelTextColor) {
+        
         if let text = text {
             label.text = text
         }
         
-        if let canBeTouched = canBeTouched {
-            label.isUserInteractionEnabled = canBeTouched
-        }
-        
+        label.isUserInteractionEnabled = canBeTouched
         label.backgroundColor = backgroundColor
         label.textColor = textColor
     }
@@ -200,9 +198,9 @@ class ViewController: UIViewController {
             updateLabelWith(eventLabel, canBeTouched: true)
             
             if solution[index].isEqual(other: events[index]) {
-                updateLabelWith(eventLabel, backgroundColor: ViewController.correctColor, textColor: UIColor.white)
+                updateLabelWith(eventLabel, canBeTouched: true, backgroundColor: ViewController.correctColor, textColor: UIColor.white)
             } else {
-                updateLabelWith(eventLabel, backgroundColor: ViewController.wrongColor, textColor: UIColor.white)
+                updateLabelWith(eventLabel, canBeTouched: true, backgroundColor: ViewController.wrongColor, textColor: UIColor.white)
             }
         }
     }

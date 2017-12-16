@@ -15,6 +15,7 @@ class GameEngine: Gamable {
     var evaluations: [EvaluationResult] = []
     
     var currentEvents: [Eventable] = []
+    var solution: [Eventable] = []
     
     required init(numberOfRounds: Int, eventsPerRound: Int, eventProvider: EventProvidable) {
         self.numberOfRounds = numberOfRounds
@@ -28,15 +29,13 @@ class GameEngine: Gamable {
     }
     
     func evaluate() -> EvaluationResult {
-        // We check e and e + 1 to see the ordering
-        for currentEventIndex in 0..<currentEvents.count - 2 {
-            // Return incorrect result if event is not before the next one
-            if !currentEvents[currentEventIndex].isBefore(event: currentEvents[currentEventIndex + 1]) {
+        for (index, currentEvent) in currentEvents.enumerated() {
+            if !currentEvent.isEqual(other: solution[index]) {
                 evaluations.append(.incorrect)
                 return evaluations[evaluations.count - 1]
             }
         }
-
+        
         evaluations.append(.correct)
         
         return evaluations[evaluations.count - 1]
@@ -48,6 +47,9 @@ class GameEngine: Gamable {
     
     func nextRound() -> [EventDescriptable] {
         currentEvents = eventProvider.random(numberOfEvents: eventsPerRound)
+        solution = currentEvents.sorted {
+            return $0.isBefore(event: $1)
+        }
         return currentEvents
     }
     
@@ -69,8 +71,6 @@ class GameEngine: Gamable {
     }
     
     func retrieveSolution() -> [EventDescriptable] {
-        return currentEvents.sorted {
-            return $0.isBefore(event: $1)
-        }
+        return solution
     }
 }
