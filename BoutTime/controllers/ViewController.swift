@@ -15,10 +15,11 @@ class ViewController: UIViewController {
         case eventInfo = "Tap events to learn more"
     }
     
-    let numberOfRounds = 2
+    let numberOfRounds = 6
     let eventsPerRound = 4
     
     let timerDuration = 60
+    let timerInterval = 1
 
     let labelsPadding = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     let labelsFont = UIFont.boldSystemFont(ofSize: 22.0)
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     var events: [EventDescriptable] = []
     
     var eventLabels: [UILabel] = []
+    var sortingButtons: [UIButton] = []
     
     var progressTimer: Timer?
     var currentTimerProgression = 0
@@ -72,6 +74,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         eventLabels = [ firstEventLabel, secondEventLabel, thirdEventLabel, fourthEventLabel ]
+        
+        sortingButtons = [
+            firstDownButton,
+            secondUpButton,
+            secondDownButton,
+            thirdUpButton,
+            thirdDownButton,
+            fourthUpButton
+        ]
         
         newGame()
         
@@ -170,15 +181,19 @@ class ViewController: UIViewController {
         successButton.isHidden = true
         failureButton.isHidden = true
         
-       for index in 0..<events.count {
+        for index in 0..<events.count {
             updateLabelWith(eventLabels[index], text: events[index].title, canBeTouched: false)
+        }
+        
+        for button in sortingButtons {
+            button.isEnabled = true
         }
         
         currentTimerProgression = timerDuration
         
         timerLabel.text = formatSeconds(seconds: currentTimerProgression)
         
-        progressTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1), target: self, selector: #selector(ViewController.updateProgress), userInfo: nil, repeats: true)
+        progressTimer = Timer.scheduledTimer(timeInterval: TimeInterval(timerInterval), target: self, selector: #selector(ViewController.updateProgress), userInfo: nil, repeats: true)
     }
     
     @objc func updateProgress() {
@@ -204,7 +219,15 @@ class ViewController: UIViewController {
     func evaluate() {
         quickHelpLabel.text = QuickHelpText.eventInfo.rawValue
         timerLabel.isHidden = true
+        
+        if let progressTimer = progressTimer, progressTimer.isValid {
+            progressTimer.invalidate()
+        }
 
+        for button in sortingButtons {
+            button.isEnabled = false
+        }
+        
         if gameEngine.hasNextRound() {
             let result = gameEngine.evaluate()
         
