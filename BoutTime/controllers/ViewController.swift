@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     let numberOfRounds = 2
     let eventsPerRound = 4
+    
+    let timerDuration = 60
 
     let labelsPadding = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     let labelsFont = UIFont.boldSystemFont(ofSize: 22.0)
@@ -26,6 +28,9 @@ class ViewController: UIViewController {
     var events: [EventDescriptable] = []
     
     var eventLabels: [UILabel] = []
+    
+    var progressTimer: Timer?
+    var currentTimerProgression = 0
     
     static let wrongColor = UIColor(red: 199/255, green: 64/255, blue: 40/255, alpha: 1)
     static let correctColor = UIColor(red: 30/255, green: 141/255, blue: 61/255, alpha: 1)
@@ -168,6 +173,25 @@ class ViewController: UIViewController {
        for index in 0..<events.count {
             updateLabelWith(eventLabels[index], text: events[index].title, canBeTouched: false)
         }
+        
+        currentTimerProgression = timerDuration
+        
+        timerLabel.text = formatSeconds(seconds: currentTimerProgression)
+        
+        progressTimer = Timer.scheduledTimer(timeInterval: TimeInterval(1), target: self, selector: #selector(ViewController.updateProgress), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateProgress() {
+        if  let progressTimer = progressTimer {
+            currentTimerProgression -= 1
+
+            if currentTimerProgression == 0 {
+                progressTimer.invalidate()
+                evaluate()
+            }
+
+           timerLabel.text = formatSeconds(seconds: currentTimerProgression)
+        }
     }
     
     // MARK: - Game
@@ -225,6 +249,14 @@ class ViewController: UIViewController {
         }
     }
     
-    // MARK: - Delayed
+    // MARK: - Utils
+    
+    func formatSeconds(seconds: Int) -> String {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.minute, .second]
+        formatter.unitsStyle = .positional
+        formatter.zeroFormattingBehavior = [ .pad ]
+        return formatter.string(from: TimeInterval(seconds))!
+    }
 }
 
