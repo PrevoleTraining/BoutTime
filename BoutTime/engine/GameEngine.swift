@@ -46,7 +46,7 @@ class GameEngine: Gamable {
         return evaluations.count < numberOfRounds
     }
     
-    func nextRound() -> [EventDescriptable]{
+    func nextRound() -> [EventDescriptable] {
         currentEvents = eventProvider.random(numberOfEvents: eventsPerRound)
         return currentEvents
     }

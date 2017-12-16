@@ -23,6 +23,7 @@
 		FD56DD9E1FE3C863004A62A6 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DD9D1FE3C863004A62A6 /* Score.swift */; };
 		FD56DDA31FE3FBEE004A62A6 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */; };
 		FD56DDA61FE3FDED004A62A6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56DDA51FE3FDED004A62A6 /* WebKit.framework */; };
+		FD6A99831FE46D6D00456835 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A99821FE46D6D00456835 /* ScoreViewController.swift */; };
 		FDBF47681FE08B6200E78992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47671FE08B6200E78992 /* AppDelegate.swift */; };
 		FDBF476A1FE08B6200E78992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47691FE08B6200E78992 /* ViewController.swift */; };
 		FDBF476D1FE08B6200E78992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF476B1FE08B6200E78992 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		FD56DD9D1FE3C863004A62A6 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		FD56DDA51FE3FDED004A62A6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FD6A99821FE46D6D00456835 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		FDBF47641FE08B6200E78992 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF47671FE08B6200E78992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDBF47691FE08B6200E78992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				FDBF47691FE08B6200E78992 /* ViewController.swift */,
 				FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */,
+				FD6A99821FE46D6D00456835 /* ScoreViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				FD56DD941FE3B33E004A62A6 /* Gamable.swift in Sources */,
 				FD56DD8D1FE3A492004A62A6 /* EventCollectionUnarchiver.swift in Sources */,
 				FD56DDA31FE3FBEE004A62A6 /* EventDetailsViewController.swift in Sources */,
+				FD6A99831FE46D6D00456835 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         case eventInfo = "Tap events to learn more"
     }
     
-    let numberOfRounds = 6
+    let numberOfRounds = 2
     let eventsPerRound = 4
 
     let labelsPadding = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
@@ -101,6 +101,9 @@ class ViewController: UIViewController {
                     destination.url = events[eventIndex].url
                 }
             }
+        } else if segue.destination is ScoreViewController {
+            let destination = segue.destination as! ScoreViewController
+            destination.score = gameEngine.score()
         }
     }
 
@@ -124,6 +127,18 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func next() {
+        if gameEngine.hasNextRound() {
+            nextRound()
+        } else {
+            endGame()
+        }
+    }
+    
+    @IBAction func startNewGame(segue: UIStoryboardSegue) {
+        newGame()
+    }
+    
     // MARK: - UI
     
     func setupEventLabel(for label: UILabel) {
@@ -145,45 +160,60 @@ class ViewController: UIViewController {
         label.textColor = textColor
     }
     
-    // MARK: - Game
-    
-    func newGame() {
+    func prepareRound() {
         quickHelpLabel.text = QuickHelpText.shake.rawValue
         timerLabel.isHidden = false
         
-        events = gameEngine.newGame()
+        successButton.isHidden = true
+        failureButton.isHidden = true
         
-        for index in 0..<events.count {
+       for index in 0..<events.count {
             updateLabelWith(eventLabels[index], text: events[index].title, canBeTouched: false)
         }
+    }
+    
+    // MARK: - Game
+    
+    func newGame() {
+        events = gameEngine.newGame()
+        prepareRound()
     }
     
     func evaluate() {
         quickHelpLabel.text = QuickHelpText.eventInfo.rawValue
         timerLabel.isHidden = true
-        
-        let result = gameEngine.evaluate()
 
         if gameEngine.hasNextRound() {
+            let result = gameEngine.evaluate()
+        
             switch result {
             case .correct:
                 successButton.isHidden = false
             case .incorrect:
                 failureButton.isHidden = false
             }
+        }
+        
+        let solution = gameEngine.retrieveSolution()
+        
+        for (index, eventLabel) in eventLabels.enumerated() {
+            updateLabelWith(eventLabel, canBeTouched: true)
             
-            let solution = gameEngine.retrieveSolution()
-            
-            for (index, eventLabel) in eventLabels.enumerated() {
-                updateLabelWith(eventLabel, canBeTouched: true)
-                
-                if solution[index].isEqual(other: events[index]) {
-                    updateLabelWith(eventLabel, backgroundColor: ViewController.correctColor, textColor: UIColor.white)
-                } else {
-                    updateLabelWith(eventLabel, backgroundColor: ViewController.wrongColor, textColor: UIColor.white)
-                }
+            if solution[index].isEqual(other: events[index]) {
+                updateLabelWith(eventLabel, backgroundColor: ViewController.correctColor, textColor: UIColor.white)
+            } else {
+                updateLabelWith(eventLabel, backgroundColor: ViewController.wrongColor, textColor: UIColor.white)
             }
-        }        
+        }
+    }
+    
+    func nextRound() {
+        events = gameEngine.nextRound()
+        prepareRound()
+    }
+    
+    func endGame() {
+        performSegue(withIdentifier: "scoreViewSegue", sender: nil)
     }
     
     func permute(first firstLabel: UILabel, second secondLabel: UILabel) {
@@ -196,5 +226,7 @@ class ViewController: UIViewController {
             secondLabel.text = events[secondIndex].title
         }
     }
+    
+    // MARK: - Delayed
 }
 

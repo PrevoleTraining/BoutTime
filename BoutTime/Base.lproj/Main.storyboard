@@ -229,6 +229,9 @@
                                                     <constraint firstAttribute="width" constant="230" id="vza-Jw-SAQ"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="next_round_success"/>
+                                                <connections>
+                                                    <action selector="next" destination="BYZ-38-t0r" eventType="touchUpInside" id="C0f-Ht-MSO"/>
+                                                </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ps-xB-W82" userLabel="Failure Next Round Button">
                                                 <rect key="frame" x="52" y="0.0" width="230" height="60"/>
@@ -237,6 +240,9 @@
                                                     <constraint firstAttribute="width" constant="230" id="I40-Jm-Njm"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="next_round_fail"/>
+                                                <connections>
+                                                    <action selector="next" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qcb-s3-wI6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -280,6 +286,7 @@
                         <outlet property="thirdEventLabel" destination="1MB-gZ-BJB" id="sPX-mC-Euk"/>
                         <outlet property="thirdUpButton" destination="YfG-9t-vTi" id="co0-Ib-mCa"/>
                         <outlet property="timerLabel" destination="9ea-y6-XJG" id="9v4-bI-UEX"/>
+                        <segue destination="DpE-2L-d6H" kind="presentation" identifier="scoreViewSegue" id="9Ok-6d-WMi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -308,7 +315,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+            <point key="canvasLocation" x="106" y="132"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="AAL-Lx-6Du">
@@ -366,10 +373,10 @@
             </objects>
             <point key="canvasLocation" x="1044" y="425.93703148425789"/>
         </scene>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="Yg7-Nn-Yjt">
             <objects>
-                <viewController id="DpE-2L-d6H" sceneMemberID="viewController">
+                <viewController id="DpE-2L-d6H" customClass="ScoreViewController" customModule="BoutTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPk-TP-Z62">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,6 +394,9 @@
                                     <constraint firstAttribute="width" constant="150" id="Wja-yn-Iqs"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="play_again"/>
+                                <connections>
+                                    <segue destination="PcC-dj-GMA" kind="unwind" unwindAction="startNewGameWithSegue:" id="OI7-eH-0Ab"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEJ-Oc-C21">
                                 <rect key="frame" x="0.0" y="233.5" width="375" height="70"/>
@@ -411,8 +421,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7lz-UT-wde"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="fEJ-Oc-C21" id="9wQ-Uq-ltK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taq-tO-vOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PcC-dj-GMA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1044" y="-274"/>
         </scene>
