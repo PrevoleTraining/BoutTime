@@ -2,16 +2,26 @@
 //  EventCollectionUnarchiver.swift
 //  BoutTime
 //
-//  Created by lprevost on 15.12.17.
-//  Copyright © 2017 prevole.ch. All rights reserved.
+//  Created by PrevoleTraining on 15.12.17.
+//  Copyright © 2017 PrevoleTraining. All rights reserved.
 //
 
 import Foundation
 import os.log
 
+/**
+ Converter of events loaded from a plist to the events collection
+ */
 class EventCollectionUnarchiver {
     static let log = OSLog(subsystem: Bundle.main.bundleIdentifier!, category: "data")
 
+    /**
+     Convert the array of events not typed to the events usable in the game
+     
+     - parameter fromArray: Array of untyped events
+     
+     - return Collection of events
+     */
     static func events(fromArray array: [AnyObject]) throws -> [Eventable] {
         var events: [Eventable] = []
         

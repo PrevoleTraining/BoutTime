@@ -24,6 +24,10 @@
 		FD56DDA31FE3FBEE004A62A6 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */; };
 		FD56DDA61FE3FDED004A62A6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56DDA51FE3FDED004A62A6 /* WebKit.framework */; };
 		FD6A99831FE46D6D00456835 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A99821FE46D6D00456835 /* ScoreViewController.swift */; };
+		FD6A99871FE54D1200456835 /* CorrectDing.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD6A99851FE54D1200456835 /* CorrectDing.wav */; };
+		FD6A99881FE54D1200456835 /* IncorrectBuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD6A99861FE54D1200456835 /* IncorrectBuzz.wav */; };
+		FD6A998A1FE54D4400456835 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A99891FE54D4400456835 /* SoundEngine.swift */; };
+		FD6A998C1FE54D6A00456835 /* SoundName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A998B1FE54D6A00456835 /* SoundName.swift */; };
 		FDBF47681FE08B6200E78992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47671FE08B6200E78992 /* AppDelegate.swift */; };
 		FDBF476A1FE08B6200E78992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF47691FE08B6200E78992 /* ViewController.swift */; };
 		FDBF476D1FE08B6200E78992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF476B1FE08B6200E78992 /* Main.storyboard */; };
@@ -50,6 +54,10 @@
 		FD56DDA21FE3FBEE004A62A6 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		FD56DDA51FE3FDED004A62A6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FD6A99821FE46D6D00456835 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		FD6A99851FE54D1200456835 /* CorrectDing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CorrectDing.wav; sourceTree = "<group>"; };
+		FD6A99861FE54D1200456835 /* IncorrectBuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = IncorrectBuzz.wav; sourceTree = "<group>"; };
+		FD6A99891FE54D4400456835 /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+		FD6A998B1FE54D6A00456835 /* SoundName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundName.swift; sourceTree = "<group>"; };
 		FDBF47641FE08B6200E78992 /* BoutTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoutTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF47671FE08B6200E78992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDBF47691FE08B6200E78992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +133,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD6A99841FE54CFE00456835 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				FD6A99851FE54D1200456835 /* CorrectDing.wav */,
+				FD6A99861FE54D1200456835 /* IncorrectBuzz.wav */,
+				FD6A99891FE54D4400456835 /* SoundEngine.swift */,
+				FD6A998B1FE54D6A00456835 /* SoundName.swift */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
 		FDBF475B1FE08B6200E78992 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +164,7 @@
 		FDBF47661FE08B6200E78992 /* BoutTime */ = {
 			isa = PBXGroup;
 			children = (
+				FD6A99841FE54CFE00456835 /* sound */,
 				FD56DD9F1FE3FBAC004A62A6 /* controllers */,
 				FD56DD921FE3B32B004A62A6 /* engine */,
 				FD56DD891FE3A379004A62A6 /* event */,
@@ -226,8 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6A99871FE54D1200456835 /* CorrectDing.wav in Resources */,
 				FDBF47721FE08B6200E78992 /* LaunchScreen.storyboard in Resources */,
 				FDBF476F1FE08B6200E78992 /* Assets.xcassets in Resources */,
+				FD6A99881FE54D1200456835 /* IncorrectBuzz.wav in Resources */,
 				FDBF476D1FE08B6200E78992 /* Main.storyboard in Resources */,
 				FD56DD821FE32B2D004A62A6 /* events.plist in Resources */,
 			);
@@ -240,9 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6A998C1FE54D6A00456835 /* SoundName.swift in Sources */,
 				FDBF476A1FE08B6200E78992 /* ViewController.swift in Sources */,
 				FD56DD981FE3BE71004A62A6 /* GameEngine.swift in Sources */,
 				FD56DD9E1FE3C863004A62A6 /* Score.swift in Sources */,
+				FD6A998A1FE54D4400456835 /* SoundEngine.swift in Sources */,
 				FD56DD861FE3471B004A62A6 /* PListConverterError.swift in Sources */,
 				FDC1E81A1FE2EDF0000389B7 /* UILabelExtension.swift in Sources */,
 				FD56DD911FE3B127004A62A6 /* EventProvider.swift in Sources */,

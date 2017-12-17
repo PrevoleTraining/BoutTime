@@ -2,8 +2,8 @@
 //  ScoreViewController.swift
 //  BoutTime
 //
-//  Created by lprevost on 15.12.17.
-//  Copyright © 2017 prevole.ch. All rights reserved.
+//  Created by PrevoleTraining on 15.12.17.
+//  Copyright © 2017 PrevoleTraining. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,7 @@ class ScoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Format the score if available
         if let score = score {
             scoreLabel.text = "\(score.score) / \(score.scoreMax)"
         }

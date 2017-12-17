@@ -2,12 +2,16 @@
 //  UILabelExtension.swift
 //  BoutTime
 //
-//  Created by lprevost on 14.12.17.
-//  Copyright © 2017 prevole.ch. All rights reserved.
+//  Created by PrevoleTraining on 14.12.17.
+//  Copyright © 2017 PrevoleTraining. All rights reserved.
+//  Inspired from a solution taken on StackOverflow
 //
 
 import UIKit
 
+/**
+ Extensions to UILabel to add a padding to the text inside the label
+ */
 extension UILabel {
     private struct AssociatedKeys {
         static var padding = UIEdgeInsets()

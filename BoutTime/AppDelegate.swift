@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  BoutTime
 //
-//  Created by lprevost on 12.12.17.
-//  Copyright © 2017 prevole.ch. All rights reserved.
+//  Created by PrevoleTraining on 12.12.17.
+//  Copyright © 2017 PrevoleTraining. All rights reserved.
 //
 
 import UIKit

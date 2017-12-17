@@ -2,8 +2,8 @@
 //  EventDetailsViewController.swift
 //  BoutTime
 //
-//  Created by lprevost on 15.12.17.
-//  Copyright © 2017 prevole.ch. All rights reserved.
+//  Created by PrevoleTraining on 15.12.17.
+//  Copyright © 2017 PrevoleTraining. All rights reserved.
 //
 
 import UIKit
@@ -18,6 +18,7 @@ class EventDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Load the URL if available
         if let url = url {
             print(url)
             let urlObject = URL(string: url)
