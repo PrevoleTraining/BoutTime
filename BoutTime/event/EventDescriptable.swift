@@ -9,16 +9,23 @@
 /**
  Offer an event that can be described
  */
-protocol EventDescriptable {
+protocol EventDescriptable: Equatable {
     var title: String { get }
     var url: String { get }
    
     /**
      Check if an event is equal with another one
  
-     - parameter other: The other event to compare with
+     - parameter lhs: The left event descriptable
+     - parameter rhs: The right event descriptable
      
      - return True if both events are the same
      */
-    func isEqual(other: EventDescriptable) -> Bool
+    static func ==(lhs: Self, rhs: Self) -> Bool
+}
+
+extension EventDescriptable {
+    static func ==(lhs: Self, rhs: Self) -> Bool {
+        return lhs.title == rhs.title
+    }
 }

@@ -9,7 +9,7 @@
 /**
  An event that can be ordered by year and an additional order attribute
  */
-protocol Eventable: EventDescriptable {
+protocol Eventable: EventDescriptable, Comparable {
     var year: Int { get }
     var order: Int { get }
    
@@ -18,7 +18,14 @@ protocol Eventable: EventDescriptable {
      
      First the year should be compared, then the order if year is the same
      
-     - parameter event: Another event to compare with
+     - parameter lhs: Left eventable
+     - parameter rhs: Right eventable
      */
-    func isBefore(event: Eventable) -> Bool
+    static func <(lhs: Self, rhs: Self) -> Bool
+}
+
+extension Eventable {
+    static func <(lhs: Self, rhs: Self) -> Bool {
+        return lhs.year < rhs.year || (lhs.year == rhs.year && lhs.order < rhs.order)
+    }
 }
