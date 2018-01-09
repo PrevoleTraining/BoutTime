@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     let soundEngine = SoundEngine()
     
     // Mapping for labels vs events
-    var events: [EventDescriptable] = []
+    var events: [Event] = []
     
     // Helper arrays to access to labels and butotns
     var eventLabels: [UILabel] = []
@@ -306,7 +306,7 @@ class ViewController: UIViewController {
         for (index, eventLabel) in eventLabels.enumerated() {
             updateEventLabelWith(eventLabel, canBeTouched: true)
             
-            if solution[index].isEqual(other: events[index]) {
+            if /*solution[index].isEqual(other: events[index])*/ solution[index] == events[index] {
                 updateEventLabelWith(eventLabel, canBeTouched: true, backgroundColor: ViewController.correctColor, textColor: UIColor.white)
             } else {
                 updateEventLabelWith(eventLabel, canBeTouched: true, backgroundColor: ViewController.wrongColor, textColor: UIColor.white)

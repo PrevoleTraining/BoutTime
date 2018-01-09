@@ -12,7 +12,9 @@
 protocol Eventable: EventDescriptable, Comparable {
     var year: Int { get }
     var order: Int { get }
-   
+}
+
+extension Eventable {
     /*
      Determine if an eventable is before another one.
      
@@ -21,10 +23,7 @@ protocol Eventable: EventDescriptable, Comparable {
      - parameter lhs: Left eventable
      - parameter rhs: Right eventable
      */
-    static func <(lhs: Self, rhs: Self) -> Bool
-}
-
-extension Eventable {
+    
     static func <(lhs: Self, rhs: Self) -> Bool {
         return lhs.year < rhs.year || (lhs.year == rhs.year && lhs.order < rhs.order)
     }

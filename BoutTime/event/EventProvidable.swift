@@ -15,7 +15,7 @@ protocol EventProvidable {
      
      - parameter events: The events at disposal to chose randomly
      */
-    init(events: [Eventable])
+    init(events: [Event])
     
     /**
      Choose a number of events randomly
@@ -24,5 +24,5 @@ protocol EventProvidable {
      
      - return Collection of chosen events
      */
-    func random(numberOfEvents number: Int) -> [Eventable]
+    func random(numberOfEvents number: Int) -> [Event]
 }

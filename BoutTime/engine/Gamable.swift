@@ -24,7 +24,7 @@ protocol Gamable {
      
      - return The collection of unsorted events for the first round
      */
-    func newGame() -> [EventDescriptable]
+    func newGame() -> [Event]
     
     /**
      Evalute the current events.
@@ -45,7 +45,7 @@ protocol Gamable {
      
      - return The collection of unsorted events for the next round
      */
-    func nextRound() -> [EventDescriptable]
+    func nextRound() -> [Event]
     
     /**
      Permute two events
@@ -55,7 +55,7 @@ protocol Gamable {
      
      - return The current collection of events
      */
-    func permute(firstEvent left: Int, secondEvent right: Int) -> [EventDescriptable]
+    func permute(firstEvent left: Int, secondEvent right: Int) -> [Event]
     
     /**
      Calculate the score of the game
@@ -69,5 +69,5 @@ protocol Gamable {
      
      - return The events in ascending order
      */
-    func retrieveSolution() -> [EventDescriptable]
+    func retrieveSolution() -> [Event]
 }

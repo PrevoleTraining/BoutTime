@@ -20,10 +20,10 @@ class GameEngine: Gamable {
     var evaluations: [EvaluationResult] = []
     
     // The events to be ordered
-    var currentEvents: [Eventable] = []
+    var currentEvents: [Event] = []
     
     // The events ordered
-    var solution: [Eventable] = []
+    var solution: [Event] = []
     
     required init(numberOfRounds: Int, eventsPerRound: Int, eventProvider: EventProvidable) {
         self.numberOfRounds = numberOfRounds
@@ -31,7 +31,7 @@ class GameEngine: Gamable {
         self.eventProvider = eventProvider
     }
     
-    func newGame() -> [EventDescriptable] {
+    func newGame() -> [Event] {
         evaluations = []
         return nextRound()
     }
@@ -39,7 +39,7 @@ class GameEngine: Gamable {
     func evaluate() -> EvaluationResult {
         // Check events sorted by the player against the solution
         for (index, currentEvent) in currentEvents.enumerated() {
-            if !currentEvent.isEqual(other: solution[index]) {
+            if /*!currentEvent.isEqual(other: solution[index])*/ currentEvent != solution[index] {
                 evaluations.append(.incorrect)
                 return evaluations[evaluations.count - 1]
             }
@@ -54,18 +54,19 @@ class GameEngine: Gamable {
         return evaluations.count < numberOfRounds
     }
     
-    func nextRound() -> [EventDescriptable] {
+    func nextRound() -> [Event] {
         currentEvents = eventProvider.random(numberOfEvents: eventsPerRound)
         
         // Sort the events to make them the solution
         solution = currentEvents.sorted {
-            return $0.isBefore(event: $1)
+//            return $0.isBefore(event: $1)
+            return $0.year < $1.year
         }
         
         return currentEvents
     }
     
-    func permute(firstEvent left: Int, secondEvent right: Int) -> [EventDescriptable] {
+    func permute(firstEvent left: Int, secondEvent right: Int) -> [Event] {
         // Permute two events
         let bubbleEvent = currentEvents[left]
         currentEvents[left] = currentEvents[right]
@@ -83,7 +84,7 @@ class GameEngine: Gamable {
         return Score(score: score, scoreMax: evaluations.count)
     }
     
-    func retrieveSolution() -> [EventDescriptable] {
+    func retrieveSolution() -> [Event] {
         return solution
     }
 }

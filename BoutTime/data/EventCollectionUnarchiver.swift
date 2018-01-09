@@ -22,8 +22,8 @@ class EventCollectionUnarchiver {
      
      - return Collection of events
      */
-    static func events(fromArray array: [AnyObject]) throws -> [Eventable] {
-        var events: [Eventable] = []
+    static func events(fromArray array: [AnyObject]) throws -> [Event] {
+        var events: [Event] = []
         
         for (index, raw) in array.enumerated() {
             if let itemDictionary = raw as? [String: Any],

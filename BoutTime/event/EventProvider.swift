@@ -12,16 +12,16 @@ import GameKit
  Implementation of the event service
  */
 class EventProvider: EventProvidable {
-    let events: [Eventable]
+    let events: [Event]
     
-    required init(events: [Eventable]) {
+    required init(events: [Event]) {
         self.events = events
     }
     
-    func random(numberOfEvents number: Int) -> [Eventable] {
+    func random(numberOfEvents number: Int) -> [Event] {
         var eventsCopy = events
         
-        var randomEvents: [Eventable] = []
+        var randomEvents: [Event] = []
    
         // Make the random choice of events making sure no event is chosen twice
         for _ in 0..<number {
